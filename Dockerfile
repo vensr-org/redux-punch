@@ -4,6 +4,5 @@ COPY . /app
 WORKDIR /app
 RUN npm install
 RUN npm run build
-COPY ./build /build
-WORKDIR /build
+WORKDIR /app/build
 CMD ["serve"]
